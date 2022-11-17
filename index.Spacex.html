@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SpaceX</title>
+	<link rel="stylesheet" href="CSS/Untitled-1.css">
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.body {
+			height: 800px;
+		}
+		.wrapper{
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			background-image:url("Image/giphyback.gif");
+			background-size: 1950px;
+			font-family: Joyce;
+			overflow-y: scroll;
+			scroll-behavior: smooth;
+	
+			
+			}
+		.header img{
+			float: left;
+			margin-left: 50px;
+			margin-top: 20px;
+			
+		}
+		.header {
+			width: 100%;
+			height: 80px;
+			background:#5965AD;
+			box-sizing: border-box;
+			position:fixed;
+			
+		}
+		.home{
+			width: 100%;
+			height: 700px;
+		}
+		
+		.humanicon{
+			width: 100%;
+			height: 800px;
+		}
+		.about{
+			width: 100%;
+			height: 800px;
+		}
+		.contact{
+			width: 100%;
+			height: 750px;
+		}
+		@font-face{
+			font-family:Joyce;
+			src: url("Fonts/Heavitas.ttf");
+		}
+		.header ul{
+			list-style: none;
+			margin-left: 300px;
+			padding-top: 20px;
+		}
+		.header ul li{
+			float: left;
+			margin-left: 150px;
+		}
+		.header ul li:hover ul{
+			visibility: visible;
+		}
+		.header ul li:hover{
+			color: aliceblue;
+			font-weight: 500;
+			background:#000000;
+			border-top: solid #FFFFFF 5px; 
+		}
+		.header ul li ul{
+			position:fixed;
+			top: 40px;
+			left: -20px;
+			visibility: hidden;
+			box-sizing:border-box;
+		}
+		.nut{
+			width: 150px;
+			height: 30px;
+			position:absolute;
+			right: 50px;
+			top: 20px;
+			border-radius: 20px;
+			border: 2px solid #000000;
+			text-align:center;
+		}
+		.nut:hover{
+			background: #FFFFFF;
+		}
+		
+		.about img{
+	        height: 600px;
+	        width: 450px;
+	        float: left;
+	        position: relative;
+			top: 100px;
+			border-radius: 20px;
+	   
+     }
+		.gallery img{
+			width: 250px;
+			height: auto;
+			top: 0px;
+			border-radius: 20px;
+		}
+		.gallery: hover{
+			border: 1px solid #777;
+		}
+		.gallery{
+			margin: 40px;
+			border: 1px solid #CCC;
+            float: left;
+            width: 250px;
+			position:relative;
+			top: 120px;
+			right: -40px;
+		}
+		.desc{
+			padding: 30px;
+            text-align:center;
+			color: aliceblue;
+		}
+		.form{
+			width: 500px;
+			height: 450px;
+			background: #F0F0F0;
+			float: right;
+			margin-top: 200px;
+			margin-right: 50px;
+			box-shadow: 2px 2px 5px #3A3A3A;
+		}
+		
+
+	
+	
+	
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="dau">
+	<div class="header">
+		<img hspace="30px" src="Image/SpaceX_Logo_Black.png" alt="logo" width="200px">
+		
+	<ul>
+	    <li>Home
+		    <ul>
+				<a href="corevalue.html"><li>&nbsp;Core value</li></a>
+				<a href="mission.html"><li>&nbsp;Mission </li></a>
+				<a href="inspriation.html"><li>&nbsp;Inspiration</li></a>
+			</ul>
+		</li>
+		<a href="#humanicon"><li>Human Icon </li></a>
+		<a href="#about"><li>About</li></a>
+		<a href="#contact"><li>Contact</li></a>
+	</ul>
+	    <div class="nut">download</div>
+	</div>	
+		</div>
+		
+		<div class="home" id="home">
+	    <img src="Image/giphy.gif" alt="go" width="100%">	  
+		<h1>welcome to my world</h1>
+		</div>
+		
+		<div class="humanicon" id="humanicon">
+			<video width="100%" autoplay>
+			<source src="Image/spaceXvidd.mp4" type="video/mp4">
+			</video>
+		
+		</div>
+		
+		<div class="about" id="about">
+		    <img src="Image/spaceXatronusgif.gif" alt="astronusgif">
+			
+		    <div class="gallery">
+             <a target="_blank" href="Image/flower astronut.jpg">
+     <img src="Image/flower astronut.jpg" alt="Garden Roses" width="300" height="400">
+     </a>
+     <div class="desc">Garden Moon: <br><i>pink Flower with the moonlover </i> <br> 69$</div>
+            </div>
+			
+			 <div class="gallery">
+    <a target="_blank" href="Image/beauty.jpg">
+    <img src="Image/beauty.jpg" alt="Garden Sun" width="300" height="400">
+    </a>
+    <div class="desc">Garden Sun: <br><i>Yellow Flower with the Sunlover </i> <br> 69$</div>
+             </div>
+			
+				 <div class="gallery">
+    <a target="_blank" href="Image/greennn.jpg">
+    <img src="Image/greennn.jpg" alt="Garden green" width="300" height="400">
+    </a>
+    <div class="desc">Garden Earth: <br><i>Green Flower with the Earthlover </i> <br>99$</div>
+                 </div>
+			</div>
+		
+		
+	<div class="contact" id="contact">
+			
+		    <div class="form">
+				<table border="2"></table>
+		<table>
+			<br><tr>
+				<td><input type="text" placeholder="First Name" id="fname"></td>
+				<td><input type="text" placeholder="Last Name"></td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="2"><input type="text" placeholder="Address"></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2"><input type="text" placeholder="Number Phone"></td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="2"><input type="text" placeholder="Note"></td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="2">
+					<input type="checkbox">
+					<p>I confirm the <font color="#1F9643">Purchase</font> & <font color="#1F9643">Information</font></p>
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2"><button type="submit"><h2>Download</h2></button></td>
+			</tr>
+			
+				
+		</table>
+			</div>
+		
+		<div class="planet">
+		    <img src="Image/earth.png" alt="Earth" width="300px" style="transform:translate(-50;0) ;translate3d(0px;360px;0px); rotate(70deg);">
+		
+		</div>
+		
+	</div>
+
+		
+</div>
+		 
+		
+</body>
+</html>
